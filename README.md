@@ -7,13 +7,13 @@ Terraform module to define a domain name (e.g. `example.com`) as a DNS ALIAS rec
 
 ```hcl
 module dns {
-  source                            = "git::https://github.com/richardkdrew/terraform-aws-route53-alias.git?ref=master"
+  source            = "git::https://github.com/richardkdrew/terraform-aws-route53-alias.git?ref=master"
 
-  entry_name                        = "${var.domain}"
-  parent_zone_id                    = "${var.hosted_zone_id}"
-  region                            = "${var.region}"
-  target_dns_name                   = "${module.cdn.cdn_hostname}"
-  target_zone_id                    = "${module.cdn.cdn_zone_id}"
+  entry_name        = "${var.domain}"
+  parent_zone_id    = "${var.hosted_zone_id}"
+  region            = "${var.region}"
+  target_dns_name   = "${module.cdn.cdn_hostname}"
+  target_zone_id    = "${module.cdn.cdn_zone_id}"
 }
 ```
 
