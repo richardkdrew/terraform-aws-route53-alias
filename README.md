@@ -23,6 +23,6 @@ module dns {
 |:-----------------------------------|:--------------:|:------------------------------------------------------------------------------------|:---------:|
 |  `entry_name`                      |  ``            |  The entry name for the alias record                                                |  Yes      |
 |  `parent_zone_id`                  |  ``            |  ID of the hosted zone to contain this record                                       |  Yes      |
-|  `region`                          |  ``            |  e.g. eu-central-1                                                                  |  No       |
-|  `target_dns_name`                 |  ``            |  DNS-name of target resource this alias record is for, e.g. example.cloudfront.net |  No       |
-|  `target_zone_id`                  |  ``            |  ID of target resource this alias record is for                                     |  No       |
+|  `region`                          |  ``            |  e.g. eu-central-1                                                                  |  Yes      |
+|  `target_dns_name`                 |  ``            |  DNS-name of target resource this alias record is for, e.g. example.cloudfront.net  |  Yes      |
+|  `target_zone_id`                  |  ``            |  ID of target resource this alias record is for                                     |  Yes      |
